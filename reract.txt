@@ -1,0 +1,58 @@
+öncesinde
+bazi extensionlar eklenmesi gerekiyor VS coda 
+eger ki json dan apiler cekilecekse onlarin da terminalden yüklenmesi gerekir
+not: dosya yapma ve ardindan terminalden vscode a baglanmak icin 
+code . yazinca vs koda baglanir
+ayrica node js in de kurulmasi gerekir
+znpx create-react-app intro
+eger dosyayi calistirmak istiyorsaniz 
+npm start
+
+1-react projesi yapabilmek icin node js kurulmasi gerekir
+2-terminale node -v yazarak node js in sürümünü bulabiliriz
+3-npx create-react-app
+4-sayet npx paketi yoksa ; npm install -g npx (global)/(terminal administrator olarak calistirilmali)
+5-redux dev tools
+6-react developer tools bunlar google chrome a eklenmeli
+Notlar:
+1-React'te build almak, React uygulamasını optimize edilmiş bir şekilde paketlemek ve dağıtmak anlamına gelir. Bu işlem, uygulamanın daha hızlı yüklenmesini ve daha az kaynak tüketmesini sağlar. Build işlemi ayrıca uygulamanın tarayıcı uyumluluğunu artırabilir ve güncelleme sonrası hataların önlenmesine yardımcı olabilir.
+1.5- npm run build
+
+2-Eger kaynak kodlarinizin görünmesini istemiyorsaniz ;
+package.json'in icindeki build kismina GENERATE_SOURCEMAP=false yazmamiz gerekiyor..
+3- git status le degisiklikleri görüyoruz
+4-Ortam değişkenleri, React uygulamasında kullanılan çevresel değişkenlerdir. Bu değişkenler, uygulamanın farklı ortamlarda çalışabilmesini sağlamak için kullanılır. Örneğin, bir React uygulamasının geliştirme ortamında farklı bir API adresi kullanması gerekebilir ve bu adres üretim ortamından farklı olabilir.
+
+React'te, .env dosyası aracılığıyla tanımlanan ortam değişkenleri vardır. Bu dosya genellikle uygulamanın kök dizininde bulunur ve "REACT_APP_" ön ekine sahip tüm değişkenleri içerir. Bu önek sayesinde bu değişkenlerin React tarafından algılandığı belirtilmiştir.
+
+Örneğin:
+
+REACT_APP_API_URL=https://my-api.com
+
+Bu şekilde tanımlanan bir REACT_APP_API_URL değeri daha sonra kodda şu şekilde erişilebilir:
+
+const apiUrl = process.env.REACT_APP_API_URL;
+5- process.env.NODE_ENV bu {} icine yazilip h3-4 gibi <h3> yazilip hangi ortamda calisildigi görülür
+6-serve -s build terminal yaz
+
+..
+.
+.
+.error: remote origin already exists. bu bir hata midir ne yapmam gerekiyor
+
+Bu hata, bir Git deposuna birden fazla uzak sunucu (remote) eklemeye çalıştığınızda oluşur. Bu durumda, uzak sunucunun zaten mevcut olduğunu ve tekrar eklenemeyeceğini belirtir.
+
+Bunu çözmek için öncelikle `git remote -v` komutunu kullanarak mevcut uzak sunucuların listesini alın. Ardından, var olan bir uzak sunucuyu silmek istiyorsanız `git remote remove <REMOTE_NAME>` komutunu kullanabilirsiniz.
+
+Örneğin, `origin` adlı bir uzak sunucuyu silmek istiyorsanız şu komutları kullanabilirsiniz:
+
+```
+$ git remote -v
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+
+$ git remote remove origin
+```
+
+Daha sonra yeni bir uzak sunucu eklemek isterseniz `git remote add https://github....repository... adresini gir` komutunu kullanabilirsiniz.
+
