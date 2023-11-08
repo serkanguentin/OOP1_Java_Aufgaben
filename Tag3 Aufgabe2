@@ -1,7 +1,7 @@
 Tag3_Aufgabe2;
 
 /*
- * Aufgabe 1
+ * Aufgabe 2
  * Führen Sie 3 Integer-Variablen ein: auswahl, zahl1 und zahl2.
  * Über auswahl soll in einem Switch-Case eine Wahl getroffen werden, welche der 4 Grundrechenarten als Methode aufgerufen wird.
  * Sollte eine falsche Auswahl getroffen werden soll eine Ausgabe auf der Konsole erscheinen die anzeigt, welche Auswahl getroffen
@@ -14,7 +14,7 @@ Tag3_Aufgabe2;
  * Beachten: Geben Sie eine Fehlermeldung auf der Konsole aus, wenn durch 0 dividiert wird.
  */
 
-public class Lösung_1
+public class Lösung_2
 {
     static int addition(int zahl1,int zahl2) {
         return zahl1 + zahl2;
